@@ -6,13 +6,15 @@ def main():
     conn = pyodbc.connect(
         "DRIVER={ODBC Driver 17 for SQL Server};"
         "SERVER=localhost;"
-        "DATABASE=YourDB;"
+        "DATABASE=TechHealthDb;"
         "Trusted_Connection=yes;"
     )
 
     cursor = conn.cursor()
 
-    query = "SELECT 1"
+    query = query = "SELECT TOP 10 * FROM Products"
+    print(f"The running query: {query}")
+
 
     start_time = time.time()
 
