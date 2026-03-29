@@ -12,7 +12,7 @@ def main():
 
     cursor = conn.cursor()
 
-    query = query = "SELECT TOP 10 * FROM Products"
+    query = input("Enter SQL query: ")
     print(f"The running query: {query}")
 
 
